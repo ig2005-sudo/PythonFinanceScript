@@ -1,4 +1,4 @@
-# PythonFinanceScript_Test
+# PythonFinanceScript
 # Project Overview
 This repository contains a technical pipeline designed to bridge operational business insights with quantitative financial analysis. The project automates the extraction of market data to calculate key risk-adjusted performance metrics.
 
