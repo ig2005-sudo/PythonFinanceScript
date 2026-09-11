@@ -152,13 +152,9 @@ portfolio_volatility = (
     portfolio_daily_returns.std() * np.sqrt(TRADING_DAYS)
 )
 
-annualized_mean_return = (
-    portfolio_daily_returns.mean() * TRADING_DAYS
-)
-
 if portfolio_volatility > 0:
     sharpe_ratio = (
-        annualized_mean_return - RISK_FREE_RATE
+        portfolio_return - RISK_FREE_RATE
     ) / portfolio_volatility
 else:
     sharpe_ratio = np.nan
